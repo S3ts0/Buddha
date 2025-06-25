@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multipage Website</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Buddhism</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+          <li>
+            <a href="#" class="nav-link" data-page="characters">Characters</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link" data-page="triptych"
+              >Triptych Poster</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link" data-page="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="page active">
+        <div class="hero">
+          <h1>Welcome to Our Buddhism Art in Ancient China: Presentation</h1>
+          <p>
+            The power is real. The story is forever. The time is now. <br />
+            By: Tiisetso, Tiafalo, and Gobosaone.
+          </p>
+          <button class="btn btn-secondary" id="video-btn">
+            <i class="fas fa-play"></i> Watch Video
+          </button>
+          <div id="video-container" style="display: none; margin-top: 2rem">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/eab2ud_FTVk"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="characters" class="page">
+        <h2>Our Characters</h2>
+        <div class="characters-grid">
+          <!-- Existing Character Card -->
+          <div class="character-card">
+            <img
+              src="pics/pic 1.jpeg"
+              alt="Peaceful Warrior"
+              class="character-image-thumbnail"
+              data-full-src="pics/pic 1.jpeg"
+            />
+            <div class="character-info">
+              <h3>Peaceful Warrior</h3>
+              <p>
+                Buddha's teachings emphasize the importance of morality,
+                meditation, and wisdom in achieving a state of peace and freedom
+                from suffering
+              </p>
+            </div>
+          </div>
+
+          <!-- NEW Character Card Added Here -->
+          <div class="character-card">
+            <img
+              src="pics/pic 4a.jpeg"
+              alt="Turn around character"
+              class="character-image-thumbnail"
+              data-full-src="pics/pic 4a.jpeg"
+            />
+            <div class="character-info">
+              <h3>Turn around character</h3>
+              <p>
+                A wise elder who provides guidance and possesses ancient
+                knowledge of the spiritual arts.
+              </p>
+            </div>
+          </div>
+          <!-- End NEW Character Card -->
+        </div>
+      </section>
+
+      <section id="triptych" class="page">
+        <h2>Triptych Poster Collection</h2>
+        <div class="triptych-container">
+          <div class="poster-panel">
+            <img
+              src="pics/pic 2c.jpeg"
+              alt="Sunrise"
+              class="poster-image"
+              data-full="pics/pic ful.jpeg"
+            />
+            <div class="poster-caption">
+              <h3>Poverty</h3>
+              <p>
+                Poverty struggles because the government can't provide shelter
+                and health care like they always promise us. Lower class
+              </p>
+            </div>
+          </div>
+          <div class="poster-panel">
+            <img
+              src="pics/pic 2a.jpeg"
+              alt="Noon"
+              class="poster-image"
+              data-full="pics/pic ful.jpeg"
+            />
+            <div class="poster-caption">
+              <h3>Midday</h3>
+              <p>Middle class, trying to survive in this power economy</p>
+            </div>
+          </div>
+          <div class="poster-panel">
+            <img
+              src="pics/pic 2b.jpeg"
+              alt="Sunset"
+              class="poster-image"
+              data-full="pics/pic ful.jpeg"
+            />
+            <div class="poster-caption">
+              <h3>First class</h3>
+              <p>
+                First class Represent the first class in the economy and it
+                Represent rich people who work with the governments, and they
+                eat people's money
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="page">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+          <p>
+            We'd love to hear from you! Reach out to us through the following:
+          </p>
+          <p>
+            Email:
+            <a href="mailto:info@budderstudio.com">info@budder.com</a>
+          </p>
+          <p>Phone: <a href="tel:+011234567890">+01 715 7809</a></p>
+          <p>Address: 312 MOOT Street, JHG City, CA 90210</p>
+          <p style="margin-top: 1.5rem">
+            You can also find us on social media:
+          </p>
+          <div class="social-links" style="justify-content: center">
+            <a href="https://www.facebook.com/budderstudio/"
+              ><i class="fab fa-facebook"></i>
+              <ion-icon name="logo-facebook"></ion-icon
+            ></a>
+            <a href="https://www.instagram.com/budderstudio/"
+              ><i class="fab fa-instagram"></i
+              ><ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.logo-twitter.com/budderstudio/"
+              ><i class="fab fa-twitter"></i
+              ><ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://www.logo-linkedin.com/budderstudio/"
+              ><i class="fab fa-linkedin"></i
+              ><ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <script
+              type="module"
+              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+            ></script>
+            <script
+              nomodule
+              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+            ></script>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-links" style="justify-content: center">
+          <a href="https://www.facebook.com/budderstudio/"
+            ><i class="fab fa-facebook"></i>
+            <ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a href="https://www.instagram.com/budderstudio/"
+            ><i class="fab fa-instagram"></i
+            ><ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://www.logo-twitter.com/budderstudio/"
+            ><i class="fab fa-twitter"></i
+            ><ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="https://www.logo-linkedin.com/budderstudio/"
+            ><i class="fab fa-linkedin"></i
+            ><ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+          ></script>
+          <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+          ></script>
+        </div>
+        <p class="copyright">© 2025 Buddhism Art in Ancient China.</p>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal Structure -->
+    <div id="lightboxModal" class="lightbox-modal">
+      <span class="close-button">&times;</span>
+      <img class="lightbox-content" id="lightboxImage" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
